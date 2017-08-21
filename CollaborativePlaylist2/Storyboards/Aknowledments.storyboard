@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="dRK-I8-GNn">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Acknowledgments View Controller-->
+        <scene sceneID="XbQ-MA-ZUD">
+            <objects>
+                <viewController id="dRK-I8-GNn" customClass="AcknowledgmentsViewController" customModule="CollaborativePlaylist2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="I2s-Qk-CTC"/>
+                        <viewControllerLayoutGuide type="bottom" id="eTD-GE-gSy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tZP-mG-vGb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Cpf-r6-KPo">
+                                <rect key="frame" x="16" y="64" width="343" height="120"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DWZ-4R-Ffk">
+                                        <rect key="frame" x="139" y="0.0" width="66" height="30"/>
+                                        <state key="normal" title="Alamofire"/>
+                                        <connections>
+                                            <segue destination="leR-EY-hgj" kind="show" id="Fwy-XX-d25"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EmL-JD-99c">
+                                        <rect key="frame" x="137" y="30" width="70" height="30"/>
+                                        <state key="normal" title="Kingfisher"/>
+                                        <connections>
+                                            <segue destination="V0c-Re-T1a" kind="show" id="5nQ-XQ-X22"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SSs-ma-y04">
+                                        <rect key="frame" x="145" y="60" width="54" height="30"/>
+                                        <state key="normal" title="Spartan"/>
+                                        <connections>
+                                            <segue destination="oEu-M6-Sfv" kind="show" id="ObP-1c-FKP"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QiA-ay-ccg">
+                                        <rect key="frame" x="124" y="90" width="96" height="30"/>
+                                        <state key="normal" title="objectMapper"/>
+                                        <connections>
+                                            <segue destination="Efo-EG-Yzj" kind="show" id="EGy-xo-bUi"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="App icon From https://icons8.com" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Khz-3q-6AQ">
+                                <rect key="frame" x="16" y="556" width="343" height="12"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Cpf-r6-KPo" firstAttribute="centerX" secondItem="tZP-mG-vGb" secondAttribute="centerX" id="7uP-mh-P6f"/>
+                            <constraint firstItem="Khz-3q-6AQ" firstAttribute="leading" secondItem="tZP-mG-vGb" secondAttribute="leadingMargin" id="86d-Vy-UQA"/>
+                            <constraint firstItem="Cpf-r6-KPo" firstAttribute="leading" secondItem="tZP-mG-vGb" secondAttribute="leadingMargin" id="GkG-At-uIE"/>
+                            <constraint firstItem="Cpf-r6-KPo" firstAttribute="top" secondItem="I2s-Qk-CTC" secondAttribute="bottom" id="K4D-gE-dAD"/>
+                            <constraint firstItem="eTD-GE-gSy" firstAttribute="top" secondItem="Khz-3q-6AQ" secondAttribute="bottom" constant="50" id="Qya-bi-D8V"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Khz-3q-6AQ" secondAttribute="trailing" id="SKL-HY-sX4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Cpf-r6-KPo" secondAttribute="trailing" id="ap9-fj-6Y8"/>
+                            <constraint firstItem="Khz-3q-6AQ" firstAttribute="centerX" secondItem="tZP-mG-vGb" secondAttribute="centerX" id="q0W-h6-mxn"/>
+                        </constraints>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Yl-xQ-kjX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3436" y="1387.5562218890557"/>
+        </scene>
+        <!--Object Mapper View Controller-->
+        <scene sceneID="40b-dO-y4M">
+            <objects>
+                <viewController id="Efo-EG-Yzj" customClass="ObjectMapperViewController" customModule="CollaborativePlaylist2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Cjj-1J-Thl"/>
+                        <viewControllerLayoutGuide type="bottom" id="jNJ-62-hlS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JPN-zc-rEw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="vsc-bl-aaM">
+                                <rect key="frame" x="16" y="64" width="343" height="222"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ObjectMapper" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EBT-XK-U8J">
+                                        <rect key="frame" x="117" y="0.0" width="110" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2qQ-G1-VYJ">
+                                        <rect key="frame" x="0.0" y="21" width="343" height="201"/>
+                                        <mutableString key="text">The MIT License (MIT)
+Copyright (c) 2014 Hearst
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+</mutableString>
+                                        <fontDescription key="fontDescription" type="system" pointSize="8"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="vsc-bl-aaM" firstAttribute="leading" secondItem="JPN-zc-rEw" secondAttribute="leadingMargin" id="Agh-QO-cnZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="vsc-bl-aaM" secondAttribute="trailing" id="M5L-Qc-ExA"/>
+                            <constraint firstItem="vsc-bl-aaM" firstAttribute="centerX" secondItem="JPN-zc-rEw" secondAttribute="centerX" id="PjU-pE-THO"/>
+                            <constraint firstItem="vsc-bl-aaM" firstAttribute="top" secondItem="Cjj-1J-Thl" secondAttribute="bottom" id="SdO-dt-RAx"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SmC-yM-X2m" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3026" y="2131"/>
+        </scene>
+        <!--Spartan View Controller-->
+        <scene sceneID="427-is-MqD">
+            <objects>
+                <viewController id="oEu-M6-Sfv" customClass="SpartanViewController" customModule="CollaborativePlaylist2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="P2f-hz-FaN"/>
+                        <viewControllerLayoutGuide type="bottom" id="AvF-DF-w61"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uuP-5Y-wRY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="wpU-Jt-KfX">
+                                <rect key="frame" x="16" y="64" width="343" height="251"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Spartan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QQe-gA-6Wx">
+                                        <rect key="frame" x="141" y="0.0" width="61" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZxN-TL-8lN">
+                                        <rect key="frame" x="1" y="21" width="342" height="230"/>
+                                        <mutableString key="text">Copyright (c) 2017 dhint4 &lt;daltonhint4@gmail.com&gt;
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.</mutableString>
+                                        <fontDescription key="fontDescription" type="system" pointSize="8"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wpU-Jt-KfX" firstAttribute="centerX" secondItem="uuP-5Y-wRY" secondAttribute="centerX" id="Npu-oz-mjr"/>
+                            <constraint firstItem="wpU-Jt-KfX" firstAttribute="top" secondItem="P2f-hz-FaN" secondAttribute="bottom" id="Ofg-Bi-tP2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="wpU-Jt-KfX" secondAttribute="trailing" id="dV1-zo-ec2"/>
+                            <constraint firstItem="wpU-Jt-KfX" firstAttribute="leading" secondItem="uuP-5Y-wRY" secondAttribute="leadingMargin" id="wTx-T9-Z9l"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9iR-tb-cm6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3861.5999999999999" y="2041.529235382309"/>
+        </scene>
+        <!--Kingfisher View Controller-->
+        <scene sceneID="g2q-yO-nu3">
+            <objects>
+                <viewController id="V0c-Re-T1a" customClass="KingfisherViewController" customModule="CollaborativePlaylist2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pyZ-j2-cJe"/>
+                        <viewControllerLayoutGuide type="bottom" id="VJv-h1-h7h"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="q00-h1-jHB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="J5W-rs-mAp">
+                                <rect key="frame" x="16" y="64" width="343" height="270"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kingfisher" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hgJ-XS-TQP">
+                                        <rect key="frame" x="133" y="0.0" width="78" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I2K-VG-cC7">
+                                        <rect key="frame" x="1" y="21" width="342" height="249"/>
+                                        <mutableString key="text">The MIT License (MIT)
+
+Copyright (c) 2017 Wei Wang
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.</mutableString>
+                                        <fontDescription key="fontDescription" type="system" pointSize="8"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="J5W-rs-mAp" firstAttribute="centerX" secondItem="q00-h1-jHB" secondAttribute="centerX" id="QgP-L1-XtM"/>
+                            <constraint firstItem="J5W-rs-mAp" firstAttribute="leading" secondItem="q00-h1-jHB" secondAttribute="leadingMargin" id="bd6-HW-JND"/>
+                            <constraint firstItem="J5W-rs-mAp" firstAttribute="top" secondItem="pyZ-j2-cJe" secondAttribute="bottom" id="xbo-wM-cle"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="J5W-rs-mAp" secondAttribute="trailing" id="zSD-pt-hJt"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C9k-uO-DkN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4716" y="1770.7646176911546"/>
+        </scene>
+        <!--Alamo View Controller-->
+        <scene sceneID="kEt-Wp-dWD">
+            <objects>
+                <viewController id="leR-EY-hgj" customClass="AlamoViewController" customModule="CollaborativePlaylist2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fNV-m8-6xZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="omz-KA-wZb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Z8B-rs-h36">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Du2-Q9-6ln">
+                                <rect key="frame" x="16" y="64" width="343" height="251"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AlamoFire" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zji-NV-6OA">
+                                        <rect key="frame" x="133" y="0.0" width="77" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="200" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6KC-p0-t23">
+                                        <rect key="frame" x="1" y="21" width="342" height="230"/>
+                                        <mutableString key="text">Copyright (c) 2014-2016 Alamofire Software Foundation (http://alamofire.org/)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.</mutableString>
+                                        <fontDescription key="fontDescription" type="system" pointSize="8"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Du2-Q9-6ln" firstAttribute="leading" secondItem="Z8B-rs-h36" secondAttribute="leadingMargin" id="Rzs-9K-R0f"/>
+                            <constraint firstItem="Du2-Q9-6ln" firstAttribute="centerX" secondItem="Z8B-rs-h36" secondAttribute="centerX" id="q2i-7J-TP5"/>
+                            <constraint firstItem="Du2-Q9-6ln" firstAttribute="top" secondItem="fNV-m8-6xZ" secondAttribute="bottom" id="wlh-Ti-V3X"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Du2-Q9-6ln" secondAttribute="trailing" id="y0P-cP-Bvz"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DFc-aG-ISr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4326" y="1088"/>
+        </scene>
+    </scenes>
+</document>
